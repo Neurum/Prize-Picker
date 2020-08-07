@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prize Picker</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Prize Picker</h1>
+    <div class="container">
+      <div id="names">
+        <form class="form" onsubmit="return fillArray() & addName()">
+          <div class="form-group row">
+            <div class="col-sm-10 entry-form">
+              <input type="text" id="form-name" class="form-control shadow" value="" placeholder="Name" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10 entry-form">
+              <input type="text" id="form-entries" class="form-control shadow" value="" placeholder="Entries" />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <button type="submit" value="Submit" class="btn btn-info shadow">Add Name</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="container2" id="name-list">
+        <div id="name-list-div"></div>
+      </div>
+    </div>
+    <div id="name-submit">
+      <button type="submit" value="Submit" class="btn btn-info shadow" id="winner-button" onclick="pickWinner()">Select Winner!</button>
+    </div>
+    <div id="winner-display">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/gift.svg" style="width: 200px; height: 200px;" id="winner-img" />
+          </div>
+          <div class="flip-card-back">
+            <h1 id="winner-name">Winner name</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
