@@ -16,7 +16,7 @@ let fillArray = () => {
 let addName = () => {
   let entryName1 = document.getElementById('form-name').value;
   let entryEntries1 = document.getElementById('form-entries').value;
-  if (document.getElementById('name-list-div').childElementCount == 9) {
+  if (document.getElementById('name-list-div').childElementCount === 9) {
     const p = document.createElement('p');
     p.className = 'name-display';
     p.appendChild(document.createTextNode(`${entryName1} - ${entryEntries1}`));
