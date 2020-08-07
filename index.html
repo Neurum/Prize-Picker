@@ -17,7 +17,7 @@
     <h1 id="title">Prize Picker</h1>
     <div class="container">
       <div id="names">
-        <form class="form" onsubmit="return fillArray() & addName()">
+        <form class="form">
           <div class="form-group row">
             <div class="col-sm-10 entry-form">
               <input type="text" id="form-name" class="form-control shadow" value="" placeholder="Name" />
@@ -31,7 +31,7 @@
 
           <div class="form-group row">
             <div class="col-sm-10">
-              <button type="submit" value="Submit" class="btn btn-info shadow">Add Name</button>
+              <button type="button" value="Submit" class="btn btn-info shadow" onclick="return fillArray() & addName()">Add Name</button>
             </div>
           </div>
         </form>
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div id="name-submit">
-      <button type="submit" value="Submit" class="btn btn-info shadow" id="winner-button" onclick="pickWinner()">Select Winner!</button>
+      <button type="button" value="Submit" class="btn btn-info shadow" id="winner-button" onclick="pickWinner()">Select Winner!</button>
     </div>
     <div id="winner-display">
       <div class="flip-card">

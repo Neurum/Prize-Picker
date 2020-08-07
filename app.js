@@ -8,17 +8,15 @@ let fillArray = () => {
   for (var i = 0; i < entryEntries; i++) {
     namesArray.push(entryName);
   }
-  console.log(namesArray);
-
-  return false;
+  return namesArray;
 };
 
 let addName = () => {
-  let entryName = document.getElementById('form-name').value;
-  let entryEntries = document.getElementById('form-entries').value;
+  let entryName1 = document.getElementById('form-name').value;
+  let entryEntries1 = document.getElementById('form-entries').value;
   const p = document.createElement('p');
   p.className = 'name-display';
-  p.appendChild(document.createTextNode(`${entryName} - ${entryEntries}`));
+  p.appendChild(document.createTextNode(`${entryName1} - ${entryEntries1}`));
   nameListDiv.appendChild(p);
   document.getElementById('form-name').value = '';
   document.getElementById('form-entries').value = '';
@@ -29,4 +27,6 @@ let pickWinner = () => {
   let winner = namesArray[Math.floor(Math.random() * namesArray.length)];
   document.getElementById('winner-name').innerHTML = winner;
   document.getElementById('winner-button').innerHTML = 'Winner Selected!';
+
+  return false;
 };
