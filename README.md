@@ -18,3 +18,7 @@ Name Picker for Raffle
 - Creating a random number generator that falls between the number of entries so a larger value is not generated thus returning an error.
 - Pulling that value out of the array after the RNG selects a number and attaching it to the spinning card.
 #### Considering this was early in my journey of learning JavaScript, I learned a lot about array manipulation and pulling values out of that array.  This is a simple application but was extremely fulfilling for me because I was able to learn and understand arrays more clearly.
+
+## Updates Planned
+- [ ] Randomizing the location of each name within the array prior to the RNG picking a name
+- [ ] Adding a clear button to clear the form without having to refresh the page
